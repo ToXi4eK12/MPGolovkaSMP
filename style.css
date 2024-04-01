@@ -1,0 +1,446 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(34, 34, 34);
+}
+header{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100px;
+    height: 100%;
+    background-color: rgba(8, 8, 8, 0);
+}
+nav{
+    width: 100px;
+    height: 100%;
+    z-index: 20;
+}
+nav ul{
+    width: 100px;
+    height: 100%;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-end; 
+    flex-direction: column; 
+    flex-wrap: nowrap; 
+    font-size: 30px;
+    z-index: 20;
+    
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    z-index: 20;
+}
+main h1{
+    display: flex;
+    justify-content:center;
+    margin-top: 40px;
+    font-size: 50px;
+    color: white;
+    font-family: "Kanit", sans-serif;
+}
+main p{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    color: white;
+    font-family: "Kanit", sans-serif;
+}
+#descript{
+    min-height: 300px;
+}
+
+#blocks::before{
+    position: relative;
+    content: ' ';
+    margin: auto;
+    right:0;
+    left:0;
+    background-color: rgb(20, 20, 20);
+    margin-bottom: 50px;
+    margin-top: 5px;
+    height: 150px;
+    transition: 1s;
+    z-index: -1;
+}
+.stokeOne::before{
+    box-shadow: 0px 18px 13px 0px rgba(0, 202, 60, 0);
+}
+.stokeTwo::before{
+    box-shadow: 0px 18px 13px 10px rgba(0, 202, 60, 0.51);
+}
+#blocks::before{
+    content: 'Blocks';
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    font-size: 70px;
+    color: white;
+    font-family: "Kanit", sans-serif;
+}
+#blocks{
+    top: 5px;
+}
+#blocks ul{
+    list-style: none;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 2fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+#blocks ul li{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(73, 73, 73);
+    border-radius: 10%;
+}
+.glow:hover{
+    box-shadow:0px 0px 12px 10px rgba(0, 255, 19, 0.55),29px 33px 73px -20px rgb(255, 255, 255, 0.05) inset;
+    transition: 0.2s;
+}
+#blocks ul li p{
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+#blocks ul li img{
+    position: absolute;
+    margin-top: 85px;
+    height: 180px;
+}
+#blocks ul li a{
+    position: absolute;
+    background-color:#6b6b6b;
+	border-radius:25px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:25px;
+	padding:8px 50px;
+	text-decoration:none;
+    margin-top: 280px;
+}
+#blocks ul li a:hover{
+    background-color:#303030;
+}
+#blocks div{
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+#Materials::before{
+    position: relative;
+    content: ' ';
+    display: block;
+    background-color: rgb(20, 20, 20);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+    z-index: -1;
+}
+#Materials::before{
+    content: 'Materials';
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    font-size: 70px;
+    color: white;
+    transition: 1s;
+    font-family: "Kanit", sans-serif;
+}
+#Materials{
+    top: 5px;
+}
+#Materials ul{
+    list-style: none;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+#Materials ul li{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(73, 73, 73);
+    border-radius: 10%;
+}
+
+#Materials ul li p{
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+#Materials ul li a{
+    position: absolute;
+    background-color:#6b6b6b;
+	border-radius:25px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:25px;
+	padding:8px 50px;
+	text-decoration:none;
+    margin-top: 280px;
+}
+#Materials ul li img{
+    position: absolute;
+    margin-top: 85px;
+    height: 180px;
+}
+#Materials ul li a:hover{
+    background-color:#303030;
+}
+#Materials div{
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+#Enchants::before{
+    position: relative;
+    content: ' ';
+    display: block;
+    background-color: rgb(20, 20, 20);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+    z-index: -1;
+}
+#Enchants::before{
+    content: 'Enchants';
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    font-size: 70px;
+    color: white;
+    transition: 1s;
+    font-family: "Kanit", sans-serif;
+}
+#Enchants{
+    top: 5px;
+}
+#Enchants ul{
+    list-style: none;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+#Enchants ul li{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(73, 73, 73);
+    border-radius: 10%;
+}
+#Enchants ul li p{
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+#Enchants ul li a{
+    position: absolute;
+    background-color:#6b6b6b;
+	border-radius:25px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:25px;
+	padding:8px 50px;
+	text-decoration:none;
+    margin-top: 280px;
+}
+#Enchants ul li img{
+    position: absolute;
+    margin-top: 85px;
+    height: 180px;
+}
+#Enchants ul li a:hover{
+    background-color:#303030;
+}
+#Enchants div{
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+#Special::before{
+    position: relative;
+    content: ' ';
+    display: block;
+    background-color: rgb(20, 20, 20);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+    z-index: -1;
+}
+#Special::before{
+    content: 'Special';
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    font-size: 70px;
+    color: white;
+    transition: 1s;
+    font-family: "Kanit", sans-serif;
+}
+#Special{
+    top: 5px;
+}
+#Special ul{
+    list-style: none;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+#Special ul li{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(73, 73, 73);
+    border-radius: 10%;
+}
+#Special ul li p{
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+#Special ul li a{
+    position: absolute;
+    background-color:#6b6b6b;
+	border-radius:25px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:25px;
+	padding:8px 50px;
+	text-decoration:none;
+    margin-top: 280px;
+}
+#Special ul li img{
+    position: absolute;
+    margin-top: 85px;
+    height: 180px;
+}
+#Special ul li a:hover{
+    background-color:#303030;
+}
+#Special div{
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+#mainWind{
+    display: none;
+    grid-template-columns: 0.15fr 1fr 0.15fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    width: 60%;
+    height: 60%;
+    background-color: #131313;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 20px;
+    font-family: "Kanit", sans-serif;
+    box-shadow: 0px 0px 14px 20px rgba(0, 255, 19, 0.59);
+    animation: glow 5s infinite;
+    transition: 0.5s;
+}
+@keyframes glow{
+    0%{
+        box-shadow: 0px 0px 14px 20px rgba(0, 255, 19, 0.59);
+    }
+    50%{
+        box-shadow: 0px 0px 20px 23px rgba(0, 255, 19, 0.59);
+    }
+    100%{
+        box-shadow: 0px 0px 14px 20px rgba(0, 255, 19, 0.59);
+    }
+}
+#close{
+    margin-top: 35px;
+    margin-left: 25px;
+    grid-column-start: 3;
+}
+#close:hover{
+    filter: invert(67%) sepia(50%) saturate(6510%) hue-rotate(87deg) brightness(119%) contrast(124%);
+}
+#ItemName{
+    color: white;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    font-size: 60px;
+    margin-left: 40px;
+    margin-top: 25px;
+    height: 70px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ItemDescriprion{
+    color: white;
+    margin-top: 20px;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    text-align: center;
+}
